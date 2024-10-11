@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- General Website Settings -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Laabed Muhammad Sami">
+        <meta name="description" content="A free online tool to generate random strong passwords."
+        <meta name="keywords" content=" password, generator, security, random, password generator, free">
+        <title>PassForge</title>
+        <!-- Setting Website Icon -->
+         <link rel="icon" href="icon.png">
+         <!-- Linking Stylesheet (CSS File) -->
+        <link rel="stylesheet" href="index.css">
+        <!-- Linking Font Awesome -->
+        <script src="https://kit.fontawesome.com/f7130c2f1f.js" crossorigin="anonymous"></script>
+        <!-- Importing "Arimo" Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <section class="container-1">
+            <header>
+                <h1>PassForge</h1>
+                <p>Generate a random secure password, online for free with PassForge.</p>
+            </header>
+            <main>
+                <h2 id="password"></h2>
+                <form action="httpsL//httpbin.org/get" method="get">
+                    <section class="checkboxes">
+                        <div class="uppercase-numbers">
+                            <div class="checkbox-container">
+                                <input type="checkbox" name="uppercase" id="uppercase" value="uppercase">
+                                <label for="uppercase"> Include uppercase letter</label>
+                            </div>
+                            <div class="checkbox-container">
+                                <input type="checkbox" name="numbers" id="numbers" value="numbers">
+                                <label for="number"> Include numbers</label>
+                            </div>
+                        </div>
+                        <div class="lowercase-symbols">
+                            <div class="checkbox-container">
+                                <input type="checkbox" name="lowercase" id="lowercase" value="lowercase">
+                                <label for="lowercase"> Include lowercase letter</label>
+                            </div>
+                            <div class="checkbox-container">
+                                <input type="checkbox" name="symbols" id="symbols" value="symbols">
+                                <label for="symbols"> Include symbols</label>
+                            </div>
+                        </div>
+                    </section>
+                    <input type="number"  min="1" max="50" placeholder="Password length" id="password-length">
+                </form>
+                <button class="generate-btn" id="generate-btn">Generate</button>
+            </main>
+            <footer>
+                <p>Developed by &lt;&lt;&lt;&copy;Laabed Muhammad Sami&gt;&gt;&gt;</p>
+            </footer>
+        </section>
+        <!-- Linking JavaScript File -->
+        <script src="index.js"></script>
+    </body>
+</html>
